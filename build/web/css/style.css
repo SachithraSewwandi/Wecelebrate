@@ -1,0 +1,11 @@
+#container {
+    background-color: #f00;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 0px;
+    position: static; /* fixed or static */
+    top: 10px;
+    left: 10px;
+}
+
