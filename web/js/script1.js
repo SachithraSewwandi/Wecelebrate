@@ -6,7 +6,7 @@ function change_Image(element){
   // one=element.toString();
    alert(one);
    document.getElementById("two").value=one;
-   document.getElementById("container").innerHTML = "";
+   document.getElementById("box1").innerHTML = "";
    showModel(one);  
 }
 
@@ -14,7 +14,7 @@ function change_Image(element){
 function showModel(one){
                     
 		 // Set up the scene, camera, and renderer as global variables.
-		    var container = document.getElementById("container");
+		    var container = document.getElementById("box1");
                     document.body.appendChild( container );
 		    var scene, camera, renderer;
                     var src1=one.split(".");
