@@ -1,3 +1,14 @@
+body{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: rgba(231,230,212,0.7);
+}
+
+
 #box1 {
     background-color: rgba(238,237,246,0.79);
     width: 300px;
@@ -5,14 +16,14 @@
     margin: 10px;
     padding: 0px;
     position: fixed; /* fixed or static */
-    top: inherit;
-    left: inherit;
+    top: 220px;
+    left: 685px;
 }
 
 #btn1{
     position: fixed;
-    top: 405px;
-    left: inherit;
+    top: 540px;
+    left: 688px;
 }
 
 #bill{
@@ -20,3 +31,4 @@
     top:inherit;
     left: 1010px;
 }
+

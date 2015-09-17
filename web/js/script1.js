@@ -2,9 +2,10 @@ var one=null;
 var fileUrl;
 
 function change_Image(element){
-   one= document.images['one'].src;
+    alert(element);
+   one= document.images[element].src;
   // one=element.toString();
-   alert(one);
+   //alert(one);
    document.getElementById("two").value=one;
    document.getElementById("box1").innerHTML = "";
    showModel(one);  
@@ -18,7 +19,7 @@ function showModel(one){
                     document.body.appendChild( container );
 		    var scene, camera, renderer;
                     var src1=one.split(".");
-                    alert(src1[0]);
+                    //alert(src1[0]);
 
 		    init();
 		    animate();
@@ -40,7 +41,7 @@ function showModel(one){
 		      camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
 		      camera.position.set(6,3,6);
 		      scene.add(camera);
-                      alert("cam");
+                      //alert("cam");
 		      // Create an event listener that resizes the renderer with the browser window.
 		      container.addEventListener('resize', function() {
 			  //var WIDTH = container.style.width,HEIGHT = container.style.height;
@@ -58,7 +59,7 @@ function showModel(one){
 		      var light = new THREE.PointLight(0xffffff);
 		      light.position.set(-100,200,100);
 		      scene.add(light);
-                        alert("bfr ld json");
+                      //alert("bfr ld json");
                      fileUrl= src1[0] + ".json";
 		      // Load in the mesh and add it to the scene.
 		      var loader = new THREE.JSONLoader();
@@ -69,7 +70,7 @@ function showModel(one){
                           
 		      });
               
-            alert("file load");
+            //alert("file load");
 
 		      // Add OrbitControls so that we can pan around with the mouse.
 		      controls = new THREE.OrbitControls(camera, renderer.domElement);
